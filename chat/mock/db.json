@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "nickName": "qq",
+      "email": "ww@ff",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "nickName": "qq",
+      "email": "ww@ff",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "nickName": "qq",
+      "email": "ww@ff",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "nickName": "qq",
+      "email": "baraky@ui.co.il",
+      "password": "1234",
+      "id": 4
+    }
+  ]
+}

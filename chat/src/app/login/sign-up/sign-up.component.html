@@ -1,0 +1,23 @@
+<div id="signup">
+  <h1>Sign Up for Free</h1>
+
+  <form [formGroup]="signInForm" (submit)="signInUser()">
+
+    <div class="top-row">
+      <div class="field-wrap">
+        <input type="text" placeholder="Nickname *" autocomplete="off" formControlName="nickName" />
+      </div>
+    </div>
+
+    <div class="field-wrap">
+      <input type="email" placeholder="Email *" autocomplete="off" formControlName="email"/>
+    </div>
+
+    <div class="field-wrap">
+      <input type="password" placeholder="Password *" autocomplete="off" formControlName="password"/>
+    </div>
+
+    <button type="submit" class="button button-block">Get Started</button>
+  </form>
+
+</div>
