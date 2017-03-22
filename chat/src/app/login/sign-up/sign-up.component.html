@@ -3,11 +3,11 @@
 
   <form [formGroup]="signInForm" (submit)="signInUser()">
 
-    <div class="top-row">
-      <div class="field-wrap">
+    <div class="top-row field-wrap">
+
         <input type="text" placeholder="Nickname *" autocomplete="off" formControlName="nickName" />
       </div>
-    </div>
+
 
     <div class="field-wrap">
       <input type="email" placeholder="Email *" autocomplete="off" formControlName="email"/>

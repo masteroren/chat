@@ -54,18 +54,18 @@ a {
   margin:0 0 40px 0;
   &:after {
     content: "";
-    display: table;
+    display:flex;
     clear: both;
   }
-  li a {
+  div a {
     display:block;
     text-decoration:none;
     padding:15px;
     background:rgba($gray-light,.25);
     color:$gray-light;
-    font-size:20px;
-    float:left;
-    width:50%;
+    font-size:30px;
+    //float:left;
+    //width:50%;
     text-align:center;
     cursor:pointer;
     transition:.5s ease;
@@ -76,8 +76,8 @@ a {
   }
 
   .tab{
-    width: 100px;
-    height: 30px;
+    width: 50%;
+   // height: 30px;
     justify-content: space-between;
 
     a{
@@ -160,13 +160,13 @@ textarea {
 .top-row {
   &:after {
     content: "";
-    display: table;
-    clear: both;
+   // display: table;
+   // clear: both;
   }
 
   > div {
-    float:left;
-    width:48%;
+   // float:left;
+    //width:48%;
     margin-right:4%;
     &:last-child {
       margin:0;
