@@ -142,19 +142,16 @@ textarea {
 
 body {
   height: 400px;
-  position: fixed;
   bottom: 0; }
 
 .col-md-2, .col-md-10 {
   padding: 0; }
 
 .panel {
-  margin-bottom: 0px; }
+  margin-bottom: 0; }
 
 .chat-window {
   bottom: 0;
-  position: fixed;
-  float: right;
   margin-left: 10px;
   width: 700px; }
 
@@ -260,7 +257,7 @@ img {
 
 .btn-group.dropup {
   position: fixed;
-  left: 0px;
+  left: 0;
   bottom: 0; }
 
 /*# sourceMappingURL=styles.css.map */
