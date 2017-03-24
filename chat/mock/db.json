@@ -1,40 +1,16 @@
 {
   "users": [
     {
-      "nickName": "qq",
-      "email": "ww@ff",
+      "nickName": "masteroren",
+      "email": "orenl@ui.co.il",
       "password": "1234",
       "id": 1
     },
     {
-      "nickName": "qq",
-      "email": "ww@ff",
+      "nickName": "Barak",
+      "email": "barak@.ui.co.il",
       "password": "1234",
       "id": 2
-    },
-    {
-      "nickName": "qq",
-      "email": "ww@ff",
-      "password": "1234",
-      "id": 3
-    },
-    {
-      "nickName": "vv",
-      "email": "vv@vv",
-      "password": "1234",
-      "id": 4
-    },
-    {
-      "nickName": "qq",
-      "email": "ww@ff",
-      "password": "1234",
-      "id": 5
-    },
-    {
-      "nickName": "qq",
-      "email": "ww@ff",
-      "password": "1234",
-      "id": 6
     }
   ]
 }
