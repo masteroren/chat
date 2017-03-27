@@ -30,7 +30,7 @@
               <input #message type="text" class="form-control input-sm chat_input"
                      placeholder="Write your message here..."/>
               <span class="input-group-btn">
-                  <button class="btn btn-primary btn-sm" id="btn-chat" (click)="send(message.value)">Send</button>
+                  <button class="btn btn-primary btn-sm" id="btn-chat" (click)="send(message.value); message.value = ''">Send</button>
               </span>
             </div>
           </div>

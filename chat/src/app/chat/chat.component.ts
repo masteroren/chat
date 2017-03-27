@@ -32,6 +32,8 @@ export class ChatComponent implements OnInit {
         let msgData = JSON.parse(msg.data);
         msgData.msgSent = this.user.nickName === JSON.parse(msg.data).nickname;
 
+        if (msgData.action == 'entered') return;
+
         this.messages = [...this.messages, msgData];
       },
       {autoApply: false}
