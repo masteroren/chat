@@ -31,7 +31,7 @@ export class LogInComponent implements OnInit {
     this.httpService.getUsers(this.logInForm.value).subscribe(data => {
       let user = data.find(item => item.email == this.logInForm.value.email && item.password == this.logInForm.value.password);
       if (user){
-        localStorage.setItem('user', JSON.stringify(user));
+        sessionStorage.setItem('user', JSON.stringify(user));
         this.route.navigate(['/', 'chat']);
       } else {
         this.route.navigate(['/', 'auth', 'signup']);

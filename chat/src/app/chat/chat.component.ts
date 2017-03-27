@@ -20,17 +20,19 @@ export class ChatComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.user = JSON.parse(localStorage.getItem('user'));
+    this.user = JSON.parse(sessionStorage.getItem('user'));
 
     this.ws = new $WebSocket(`ws://${window.location.hostname}:8080/ws`);
 
     this.ws.onMessage(
       (msg: MessageEvent)=> {
         console.log("onMessage ", msg.data);
+        console.log("User nickname: ", this.user.nickName);
 
-        this.msgSent = this.user.nickName === JSON.parse(msg.data).nickName;
+        let msgData = JSON.parse(msg.data);
+        msgData.msgSent = this.user.nickName === JSON.parse(msg.data).nickname;
 
-        this.messages = [...this.messages, JSON.parse(msg.data)];
+        this.messages = [...this.messages, msgData];
       },
       {autoApply: false}
     );

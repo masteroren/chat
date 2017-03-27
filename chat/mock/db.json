@@ -1,14 +1,14 @@
 {
   "users": [
     {
-      "nickName": "masteroren",
+      "nickName": "Oren",
       "email": "orenl@ui.co.il",
       "password": "1234",
       "id": 1
     },
     {
-      "nickName": "Barak",
-      "email": "barak@.ui.co.il",
+      "nickName": "Varda",
+      "email": "vardaa@ui.co.il",
       "password": "1234",
       "id": 2
     }

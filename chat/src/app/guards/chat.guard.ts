@@ -12,7 +12,7 @@ export class ChatGuard implements CanActivate {
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): Observable<boolean>|Promise<boolean>|boolean {
     let valid = false;
 
-    let user  = localStorage.getItem('user');
+    let user  = sessionStorage.getItem('user');
     if (user){
       valid = true;
     } else {
