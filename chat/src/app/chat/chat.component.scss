@@ -4,6 +4,13 @@ body {
   //bottom: 0;
 }
 
+.container{
+  display: flex;
+  justify-content: center;
+  height: 400px;
+  align-items: center;
+}
+
 
 .col-md-2, .col-md-10 {
   padding: 0;
@@ -14,9 +21,6 @@ body {
 }
 
 .chat-window {
-  bottom: 0;
-  position: fixed;
-  float: right;
   margin-left: 10px;
   width: 700px;
 }

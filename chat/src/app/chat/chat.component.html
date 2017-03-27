@@ -17,7 +17,7 @@
             <div class="col-md-10 col-xs-10">
               <div class="messages" [ngClass]="{'msg_sent': msgSent, 'msg_receive': !msgSent}">
                 <p>{{msg.action == 'entered'? user.nickName : msg.message}}</p>
-                <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
+                <time datetime="2009-11-13T20:00">{{msg.nickname}} • {{msg.timePast}} min</time>
               </div>
             </div>
             <div class="col-md-2 col-xs-2 avatar">
@@ -28,7 +28,7 @@
           <div class="panel-footer">
             <div class="input-group">
               <input #message type="text" class="form-control input-sm chat_input"
-                     placeholder="Write your message here..."/>
+                     placeholder="Write your message here..."  (keydown.enter)="send(message.value); message.value = ''"/>
               <span class="input-group-btn">
                   <button class="btn btn-primary btn-sm" id="btn-chat" (click)="send(message.value); message.value = ''">Send</button>
               </span>

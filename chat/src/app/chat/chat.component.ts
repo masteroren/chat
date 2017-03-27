@@ -20,6 +20,8 @@ export class ChatComponent implements OnInit {
   }
 
   ngOnInit() {
+    let baseMinutes = new Date().getMinutes();
+    console.log(baseMinutes);
     this.user = JSON.parse(sessionStorage.getItem('user'));
 
     this.ws = new $WebSocket(`ws://${window.location.hostname}:8080/ws`);
@@ -32,7 +34,12 @@ export class ChatComponent implements OnInit {
         let msgData = JSON.parse(msg.data);
         msgData.msgSent = this.user.nickName === JSON.parse(msg.data).nickname;
 
+        let nowMinuts = new Date().getMinutes();
+        console.log(nowMinuts);
+        msgData.timePast = nowMinuts - baseMinutes;
+
         if (msgData.action == 'entered') return;
+
 
         this.messages = [...this.messages, msgData];
       },
