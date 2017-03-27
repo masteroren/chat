@@ -15,7 +15,7 @@
           <div *ngFor="let msg of messages; let index=index;"
                class="row msg_container" [ngClass]="{'base_sent': msgSent, 'base_receive': !msgSent}">
             <div class="col-md-10 col-xs-10">
-              <div class="messages" [ngClass]="{'msg_sent': true, 'msg_receive': false}">
+              <div class="messages" [ngClass]="{'msg_sent': msgSent, 'msg_receive': !msgSent}">
                 <p>{{msg.action == 'entered'? user.nickName : msg.message}}</p>
                 <time datetime="2009-11-13T20:00">Timothy • 51 min</time>
               </div>

@@ -28,7 +28,7 @@ export class ChatComponent implements OnInit {
       (msg: MessageEvent)=> {
         console.log("onMessage ", msg.data);
 
-        this.msgSent = this.user.nickName == JSON.parse(msg.data).nickName;
+        this.msgSent = this.user.nickName === JSON.parse(msg.data).nickName;
 
         this.messages = [...this.messages, JSON.parse(msg.data)];
       },
